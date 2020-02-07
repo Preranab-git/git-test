@@ -1,5 +1,7 @@
 pipeline {
-    agent { label 'DTPL14' }
+    agent { 
+	    label 'DTPL14' 
+    }
     stages {
         stage('One') {
                 steps {
