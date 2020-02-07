@@ -29,16 +29,10 @@ pipeline {
                                 }
                         }
 			stage('Integration test') {
-                        agent {
-                                master {
-                                        reuseNode false
-					image 'windows'
-                                        }
-			}
 				steps {
 					echo 'Running the integration test..'
 				}
                 }
-		}}
+	}}
     }
 }
